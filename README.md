@@ -84,7 +84,7 @@ Para restaurar o banco da API, pare o serviço, preserve o banco atual, copie um
 
 ## Documentação e evidências
 
-[Relatório detalhado](docs/relatorio.md) · [Word](docs/relatorio-academico.docx) · [PDF](docs/relatorio-academico.pdf). Os documentos estão sendo refeitos após a implantação e serão substituídos pela versão final revisada no commit de conclusão. Evidências de infraestrutura foram coletadas da CLI autenticada, com identificadores da assinatura omitidos; não são telas do portal Azure.
+[Relatório detalhado](docs/relatorio.md) · [Word](docs/relatorio-academico.docx) · [PDF](docs/relatorio-academico.pdf). Os documentos finais foram refeitos após a implantação: 28 páginas, três diagramas e 15 capturas selecionadas, com revisão visual de todas as páginas. Evidências de infraestrutura foram coletadas da CLI autenticada, com identificadores da assinatura omitidos; não são telas do portal Azure.
 
 ## Limitações e encerramento
 

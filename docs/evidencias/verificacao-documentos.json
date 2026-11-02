@@ -1,7 +1,14 @@
 {
-  "paginas_pdf": 18,
-  "imagens_incorporadas_word": 12,
+  "data_utc": "2026-11-02T18:29:48.910244+00:00",
+  "paginas_pdf": 28,
+  "imagens_incorporadas_word": 18,
+  "diagramas": 3,
+  "capturas_selecionadas": 15,
   "links_externos_imagem": [],
-  "caminhos_pessoais_word": [],
-  "metodo": "Word Microsoft exportação nativa e renderização PyMuPDF; revisão visual de todas as páginas"
+  "revisao_visual": "Todas as 28 paginas renderizadas e inspecionadas; sem cortes ou sobreposicoes observados",
+  "metodo": "Microsoft Word exportacao nativa e renderizacao PyMuPDF",
+  "sha256": {
+    "relatorio-academico.docx": "809b3fba67ad8846ac8f9169af54f416981d7bdfd286a030b9e40cca62f22d78",
+    "relatorio-academico.pdf": "9f83e04e5ae7fd36005f70315b2f6df9b08c35e2003bf8ea5daa8f0266ecb306"
+  }
 }
