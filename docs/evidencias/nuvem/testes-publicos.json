@@ -1,0 +1,418 @@
+[
+  {
+    "data_utc": "2026-11-02T18:09:05.361745+00:00",
+    "metodo": "GET",
+    "url": "https://tarefas-academica-shamiryy-20261102.mexicocentral.cloudapp.azure.com/health",
+    "corpo_enviado": null,
+    "http_esperado": 200,
+    "http_recebido": 200,
+    "resposta": {
+      "status": "ok"
+    }
+  },
+  {
+    "data_utc": "2026-11-02T18:09:06.386573+00:00",
+    "metodo": "POST",
+    "url": "https://tarefas-academica-shamiryy-20261102.mexicocentral.cloudapp.azure.com/tarefas",
+    "corpo_enviado": {
+      "titulo": "Teste CRUD publico ficticio",
+      "descricao": "Evidencia automatizada",
+      "status": "pendente"
+    },
+    "http_esperado": 201,
+    "http_recebido": 201,
+    "resposta": {
+      "titulo": "Teste CRUD publico ficticio",
+      "descricao": "Evidencia automatizada",
+      "status": "pendente",
+      "id": 1,
+      "data_criacao": "2026-11-02T18:09:04.923712Z"
+    }
+  },
+  {
+    "data_utc": "2026-11-02T18:09:07.319183+00:00",
+    "metodo": "GET",
+    "url": "https://tarefas-academica-shamiryy-20261102.mexicocentral.cloudapp.azure.com/tarefas",
+    "corpo_enviado": null,
+    "http_esperado": 200,
+    "http_recebido": 200,
+    "resposta": [
+      {
+        "titulo": "Teste CRUD publico ficticio",
+        "descricao": "Evidencia automatizada",
+        "status": "pendente",
+        "id": 1,
+        "data_criacao": "2026-11-02T18:09:04.923712Z"
+      }
+    ]
+  },
+  {
+    "data_utc": "2026-11-02T18:09:08.289204+00:00",
+    "metodo": "GET",
+    "url": "https://tarefas-academica-shamiryy-20261102.mexicocentral.cloudapp.azure.com/tarefas/1",
+    "corpo_enviado": null,
+    "http_esperado": 200,
+    "http_recebido": 200,
+    "resposta": {
+      "titulo": "Teste CRUD publico ficticio",
+      "descricao": "Evidencia automatizada",
+      "status": "pendente",
+      "id": 1,
+      "data_criacao": "2026-11-02T18:09:04.923712Z"
+    }
+  },
+  {
+    "data_utc": "2026-11-02T18:09:09.251483+00:00",
+    "metodo": "PUT",
+    "url": "https://tarefas-academica-shamiryy-20261102.mexicocentral.cloudapp.azure.com/tarefas/1",
+    "corpo_enviado": {
+      "titulo": "Teste atualizado ficticio",
+      "descricao": "CRUD verificado",
+      "status": "concluida"
+    },
+    "http_esperado": 200,
+    "http_recebido": 200,
+    "resposta": {
+      "titulo": "Teste atualizado ficticio",
+      "descricao": "CRUD verificado",
+      "status": "concluida",
+      "id": 1,
+      "data_criacao": "2026-11-02T18:09:04.923712Z"
+    }
+  },
+  {
+    "data_utc": "2026-11-02T18:09:10.276902+00:00",
+    "metodo": "POST",
+    "url": "https://tarefas-academica-shamiryy-20261102.mexicocentral.cloudapp.azure.com/tarefas",
+    "corpo_enviado": {
+      "titulo": ""
+    },
+    "http_esperado": 422,
+    "http_recebido": 422,
+    "resposta": {
+      "detail": [
+        {
+          "type": "string_too_short",
+          "loc": [
+            "body",
+            "titulo"
+          ],
+          "msg": "String should have at least 1 character",
+          "input": "",
+          "ctx": {
+            "min_length": 1
+          }
+        }
+      ]
+    }
+  },
+  {
+    "data_utc": "2026-11-02T18:09:11.262798+00:00",
+    "metodo": "POST",
+    "url": "https://tarefas-academica-shamiryy-20261102.mexicocentral.cloudapp.azure.com/tarefas",
+    "corpo_enviado": {
+      "titulo": "   "
+    },
+    "http_esperado": 422,
+    "http_recebido": 422,
+    "resposta": {
+      "detail": [
+        {
+          "type": "string_too_short",
+          "loc": [
+            "body",
+            "titulo"
+          ],
+          "msg": "String should have at least 1 character",
+          "input": "   ",
+          "ctx": {
+            "min_length": 1
+          }
+        }
+      ]
+    }
+  },
+  {
+    "data_utc": "2026-11-02T18:09:12.246554+00:00",
+    "metodo": "POST",
+    "url": "https://tarefas-academica-shamiryy-20261102.mexicocentral.cloudapp.azure.com/tarefas",
+    "corpo_enviado": {
+      "titulo": "x",
+      "status": "invalido"
+    },
+    "http_esperado": 422,
+    "http_recebido": 422,
+    "resposta": {
+      "detail": [
+        {
+          "type": "literal_error",
+          "loc": [
+            "body",
+            "status"
+          ],
+          "msg": "Input should be 'pendente', 'em_andamento' or 'concluida'",
+          "input": "invalido",
+          "ctx": {
+            "expected": "'pendente', 'em_andamento' or 'concluida'"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "data_utc": "2026-11-02T18:09:13.245422+00:00",
+    "metodo": "POST",
+    "url": "https://tarefas-academica-shamiryy-20261102.mexicocentral.cloudapp.azure.com/tarefas",
+    "corpo_enviado": {
+      "titulo": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+    },
+    "http_esperado": 422,
+    "http_recebido": 422,
+    "resposta": {
+      "detail": [
+        {
+          "type": "string_too_long",
+          "loc": [
+            "body",
+            "titulo"
+          ],
+          "msg": "String should have at most 120 characters",
+          "input": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+          "ctx": {
+            "max_length": 120
+          }
+        }
+      ]
+    }
+  },
+  {
+    "data_utc": "2026-11-02T18:09:14.269098+00:00",
+    "metodo": "POST",
+    "url": "https://tarefas-academica-shamiryy-20261102.mexicocentral.cloudapp.azure.com/tarefas",
+    "corpo_enviado": {
+      "titulo": "x",
+      "campo_extra": true
+    },
+    "http_esperado": 422,
+    "http_recebido": 422,
+    "resposta": {
+      "detail": [
+        {
+          "type": "extra_forbidden",
+          "loc": [
+            "body",
+            "campo_extra"
+          ],
+          "msg": "Extra inputs are not permitted",
+          "input": true
+        }
+      ]
+    }
+  },
+  {
+    "data_utc": "2026-11-02T18:09:15.294619+00:00",
+    "metodo": "PUT",
+    "url": "https://tarefas-academica-shamiryy-20261102.mexicocentral.cloudapp.azure.com/tarefas/1",
+    "corpo_enviado": {
+      "titulo": " "
+    },
+    "http_esperado": 422,
+    "http_recebido": 422,
+    "resposta": {
+      "detail": [
+        {
+          "type": "string_too_short",
+          "loc": [
+            "body",
+            "titulo"
+          ],
+          "msg": "String should have at least 1 character",
+          "input": " ",
+          "ctx": {
+            "min_length": 1
+          }
+        }
+      ]
+    }
+  },
+  {
+    "data_utc": "2026-11-02T18:09:16.315368+00:00",
+    "metodo": "GET",
+    "url": "https://tarefas-academica-shamiryy-20261102.mexicocentral.cloudapp.azure.com/tarefas/1",
+    "corpo_enviado": null,
+    "http_esperado": 200,
+    "http_recebido": 200,
+    "resposta": {
+      "titulo": "Teste atualizado ficticio",
+      "descricao": "CRUD verificado",
+      "status": "concluida",
+      "id": 1,
+      "data_criacao": "2026-11-02T18:09:04.923712Z"
+    }
+  },
+  {
+    "data_utc": "2026-11-02T18:09:17.275832+00:00",
+    "metodo": "GET",
+    "url": "https://tarefas-academica-shamiryy-20261102.mexicocentral.cloudapp.azure.com/tarefas/999999999",
+    "corpo_enviado": null,
+    "http_esperado": 404,
+    "http_recebido": 404,
+    "resposta": {
+      "detail": "Tarefa não encontrada"
+    }
+  },
+  {
+    "data_utc": "2026-11-02T18:09:18.263879+00:00",
+    "metodo": "GET",
+    "url": "https://tarefas-academica-shamiryy-20261102.mexicocentral.cloudapp.azure.com/tarefas?limit=101",
+    "corpo_enviado": null,
+    "http_esperado": 422,
+    "http_recebido": 422,
+    "resposta": {
+      "detail": [
+        {
+          "type": "less_than_equal",
+          "loc": [
+            "query",
+            "limit"
+          ],
+          "msg": "Input should be less than or equal to 100",
+          "input": "101",
+          "ctx": {
+            "le": 100
+          }
+        }
+      ]
+    }
+  },
+  {
+    "data_utc": "2026-11-02T18:09:19.234426+00:00",
+    "metodo": "DELETE",
+    "url": "https://tarefas-academica-shamiryy-20261102.mexicocentral.cloudapp.azure.com/tarefas/1",
+    "corpo_enviado": null,
+    "http_esperado": 204,
+    "http_recebido": 204,
+    "resposta": null
+  },
+  {
+    "data_utc": "2026-11-02T18:09:20.125923+00:00",
+    "metodo": "GET",
+    "url": "https://tarefas-academica-shamiryy-20261102.mexicocentral.cloudapp.azure.com/tarefas/1",
+    "corpo_enviado": null,
+    "http_esperado": 404,
+    "http_recebido": 404,
+    "resposta": {
+      "detail": "Tarefa não encontrada"
+    }
+  },
+  {
+    "data_utc": "2026-11-02T18:09:21.028646+00:00",
+    "metodo": "DELETE",
+    "url": "https://tarefas-academica-shamiryy-20261102.mexicocentral.cloudapp.azure.com/tarefas/1",
+    "corpo_enviado": null,
+    "http_esperado": 404,
+    "http_recebido": 404,
+    "resposta": {
+      "detail": "Tarefa não encontrada"
+    }
+  },
+  {
+    "data_utc": "2026-11-02T18:09:22.048929+00:00",
+    "metodo": "POST",
+    "url": "https://tarefas-academica-shamiryy-20261102.mexicocentral.cloudapp.azure.com/tarefas",
+    "corpo_enviado": {
+      "titulo": "Persistencia na nuvem - dado ficticio",
+      "descricao": "Preservada apos reinicio do servico e da VM",
+      "status": "pendente"
+    },
+    "http_esperado": 201,
+    "http_recebido": 201,
+    "resposta": {
+      "titulo": "Persistencia na nuvem - dado ficticio",
+      "descricao": "Preservada apos reinicio do servico e da VM",
+      "status": "pendente",
+      "id": 2,
+      "data_criacao": "2026-11-02T18:09:20.590273Z"
+    }
+  },
+  {
+    "data_utc": "2026-11-02T18:09:40.484683+00:00",
+    "metodo": "GET",
+    "url": "https://tarefas-academica-shamiryy-20261102.mexicocentral.cloudapp.azure.com/tarefas",
+    "corpo_enviado": null,
+    "http_esperado": 200,
+    "http_recebido": 200,
+    "resposta": [
+      {
+        "titulo": "Persistencia na nuvem - dado ficticio",
+        "descricao": "Preservada apos reinicio do servico e da VM",
+        "status": "pendente",
+        "id": 2,
+        "data_criacao": "2026-11-02T18:09:20.590273Z"
+      },
+      {
+        "titulo": "Tarefa ficticia capturada 1793642977",
+        "descricao": "",
+        "status": "pendente",
+        "id": 3,
+        "data_criacao": "2026-11-02T18:09:37.128923Z"
+      }
+    ]
+  },
+  {
+    "data_utc": "2026-11-02T18:09:45.156871+00:00",
+    "metodo": "GET",
+    "url": "https://tarefas-academica-shamiryy-20261102.mexicocentral.cloudapp.azure.com/tarefas/3",
+    "corpo_enviado": null,
+    "http_esperado": 200,
+    "http_recebido": 200,
+    "resposta": {
+      "titulo": "Tarefa ficticia capturada 1793642977",
+      "descricao": "",
+      "status": "concluida",
+      "id": 3,
+      "data_criacao": "2026-11-02T18:09:37.128923Z"
+    }
+  },
+  {
+    "data_utc": "2026-11-02T18:09:47.857138+00:00",
+    "metodo": "GET",
+    "url": "https://tarefas-academica-shamiryy-20261102.mexicocentral.cloudapp.azure.com/tarefas/3",
+    "corpo_enviado": null,
+    "http_esperado": 404,
+    "http_recebido": 404,
+    "resposta": {
+      "detail": "Tarefa não encontrada"
+    }
+  },
+  {
+    "data_utc": "2026-11-02T18:10:30.137422+00:00",
+    "metodo": "GET",
+    "url": "https://tarefas-academica-shamiryy-20261102.mexicocentral.cloudapp.azure.com/tarefas/2",
+    "corpo_enviado": null,
+    "http_esperado": 200,
+    "http_recebido": 200,
+    "resposta": {
+      "titulo": "Persistencia na nuvem - dado ficticio",
+      "descricao": "Preservada apos reinicio do servico e da VM",
+      "status": "pendente",
+      "id": 2,
+      "data_criacao": "2026-11-02T18:09:20.590273Z"
+    }
+  },
+  {
+    "data_utc": "2026-11-02T18:11:20.185539+00:00",
+    "metodo": "GET",
+    "url": "https://tarefas-academica-shamiryy-20261102.mexicocentral.cloudapp.azure.com/tarefas/2",
+    "corpo_enviado": null,
+    "http_esperado": 200,
+    "http_recebido": 200,
+    "resposta": {
+      "titulo": "Persistencia na nuvem - dado ficticio",
+      "descricao": "Preservada apos reinicio do servico e da VM",
+      "status": "pendente",
+      "id": 2,
+      "data_criacao": "2026-11-02T18:09:20.590273Z"
+    }
+  }
+]

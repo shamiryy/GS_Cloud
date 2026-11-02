@@ -1,0 +1,23 @@
+INVENTARIO REAL CONSULTADO NA AZURE CLI - 02/11/2026
+Identificadores de assinatura omitidos. Nao e tela do portal.
+
+Provedor: Microsoft Azure
+Grupo exclusivo: rg-api-tarefas-academica
+Regiao: mexicocentral
+VM: vm-api-tarefas
+SKU VM: Standard_B2ats_v2
+vCPU: 2 | Memoria: 1 GiB
+SO confirmado: Debian GNU/Linux 12 (bookworm)
+Provisionamento: Succeeded
+
+Disco: disk-api-tarefas
+SKU: Standard_LRS | Capacidade: 32 GiB
+Tipo: HDD gerenciado persistente de SO
+Exportacao: DenyAll / Disabled
+
+IP publico: ip-api-tarefas
+SKU IP: Standard | Alocacao: Static
+VNet: vnet-api-tarefas
+NSG: nsg-api-tarefas
+Portas publicas permitidas: 80 e 443/TCP
+Instancias: 1 | Workers Uvicorn: 1

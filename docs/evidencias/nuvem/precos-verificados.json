@@ -1,0 +1,48 @@
+{
+  "data_consulta": "2026-11-02",
+  "fonte": "https://prices.azure.com/api/retail/prices",
+  "base_730_horas_usd": 12.8586,
+  "condicao": "Varejo antes de beneficios; mais operacoes e eventual trafego",
+  "itens": [
+    {
+      "armRegionName": "mexicocentral",
+      "productName": "Standard HDD Managed Disks",
+      "skuName": "S4 LRS",
+      "meterName": "S4 LRS Disk Operations",
+      "retailPrice": 0.00055,
+      "unitOfMeasure": "10K",
+      "currencyCode": "USD",
+      "effectiveStartDate": "2024-02-01T00:00:00Z"
+    },
+    {
+      "armRegionName": "mexicocentral",
+      "productName": "IP Addresses",
+      "skuName": "Standard",
+      "meterName": "Standard IPv4 Static Public IP",
+      "retailPrice": 0.005,
+      "unitOfMeasure": "1 Hour",
+      "currencyCode": "USD",
+      "effectiveStartDate": "2024-02-01T00:00:00Z"
+    },
+    {
+      "armRegionName": "mexicocentral",
+      "productName": "Standard HDD Managed Disks",
+      "skuName": "S4 LRS",
+      "meterName": "S4 LRS Disk",
+      "retailPrice": 1.6896,
+      "unitOfMeasure": "1/Month",
+      "currencyCode": "USD",
+      "effectiveStartDate": "2024-02-01T00:00:00Z"
+    },
+    {
+      "armRegionName": "mexicocentral",
+      "productName": "Virtual Machines Basv2 Series",
+      "skuName": "B2ats v2",
+      "meterName": "B2ats v2",
+      "retailPrice": 0.0103,
+      "unitOfMeasure": "1 Hour",
+      "currencyCode": "USD",
+      "effectiveStartDate": "2026-07-01T00:00:00Z"
+    }
+  ]
+}

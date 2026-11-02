@@ -1,0 +1,20 @@
+RESULTADO REAL NA VM AZURE - 02/11/2026
+
+SO: Debian GNU/Linux 12 (bookworm)
+Python: 3.11.2 | SQLite: 3.40.1
+FastAPI: 0.162.0
+Uvicorn: 0.54.0
+Caddy: 2.6.2
+Servico tarefas: active
+Servico caddy: active
+
+Banco: /var/lib/tarefas/tarefas.db
+Proprietario: tarefas
+Permissao: 0o600
+Montagem: /dev/sda1 ext4   /
+
+Backup e restauracao em arquivo separado:
+Registros comparados: 1
+Dados identicos: True
+PRAGMA integrity_check: ok
+Limite: copias no mesmo disco; sem backup externo automatico.

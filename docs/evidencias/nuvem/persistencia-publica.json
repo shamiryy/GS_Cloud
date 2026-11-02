@@ -1,0 +1,23 @@
+{
+  "antes": {
+    "titulo": "Persistencia na nuvem - dado ficticio",
+    "descricao": "Preservada apos reinicio do servico e da VM",
+    "status": "pendente",
+    "id": 2,
+    "data_criacao": "2026-11-02T18:09:20.590273Z"
+  },
+  "apos_reinicio_servico": {
+    "titulo": "Persistencia na nuvem - dado ficticio",
+    "descricao": "Preservada apos reinicio do servico e da VM",
+    "status": "pendente",
+    "id": 2,
+    "data_criacao": "2026-11-02T18:09:20.590273Z"
+  },
+  "apos_reinicio_vm": {
+    "titulo": "Persistencia na nuvem - dado ficticio",
+    "descricao": "Preservada apos reinicio do servico e da VM",
+    "status": "pendente",
+    "id": 2,
+    "data_criacao": "2026-11-02T18:09:20.590273Z"
+  }
+}

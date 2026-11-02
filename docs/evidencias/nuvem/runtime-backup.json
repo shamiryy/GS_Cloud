@@ -1,0 +1,34 @@
+{
+  "data_utc": "2026-11-02T18:13:49.677371+00:00",
+  "os": "Debian GNU/Linux 12 (bookworm)",
+  "python": "3.11.2",
+  "sqlite": "3.40.1",
+  "bibliotecas": {
+    "fastapi": "0.162.0",
+    "uvicorn": "0.54.0",
+    "pydantic": "2.14.2",
+    "starlette": "1.10.0"
+  },
+  "caddy": "2.6.2",
+  "servicos": {
+    "tarefas": "active",
+    "caddy": "active"
+  },
+  "banco": {
+    "caminho": "/var/lib/tarefas/tarefas.db",
+    "permissao_octal": "0o600",
+    "proprietario": "tarefas"
+  },
+  "backup_restauracao": {
+    "ambiente": "VM Azure",
+    "backup": "/var/lib/tarefas/backups/backup-20261102T181349Z.db",
+    "restauracao_em_arquivo_separado": "/var/lib/tarefas/backups/restaurado-20261102T181349Z.db",
+    "registros_comparados": 1,
+    "integridade": "ok",
+    "dados_identicos": true,
+    "limite": "Ambos no mesmo disco; sem copia externa automatica"
+  },
+  "disco_montado": "/dev/sda1 ext4   /",
+  "portas_em_escuta": "State  Recv-Q Send-Q Local Address:Port Peer Address:PortProcess\nLISTEN 0      2048       127.0.0.1:8000      0.0.0.0:*          \nLISTEN 0      4096       127.0.0.1:2019      0.0.0.0:*          \nLISTEN 0      4096   127.0.0.53%lo:53        0.0.0.0:*          \nLISTEN 0      4096         0.0.0.0:5355      0.0.0.0:*          \nLISTEN 0      4096      127.0.0.54:53        0.0.0.0:*          \nLISTEN 0      128          0.0.0.0:22        0.0.0.0:*          \nLISTEN 0      4096               *:443             *:*          \nLISTEN 0      4096            [::]:5355         [::]:*          \nLISTEN 0      4096               *:80              *:*          \nLISTEN 0      128             [::]:22           [::]:*",
+  "commit_codigo": "b7c5f4177eb2ed4dbf230d944ad0f9fdca4e2218"
+}

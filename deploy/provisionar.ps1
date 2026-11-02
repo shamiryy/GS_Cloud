@@ -1,22 +1,27 @@
-param([switch]$AutorizarConsumoDeCreditos)
+﻿param(
+ [switch]$AutorizarConsumoDeCreditos,
+ [string]$Regiao='mexicocentral',
+ [string]$Tamanho='Standard_B2ats_v2',
+ [string]$Dns='tarefas-academica-shamiryy-20261102'
+)
 $ErrorActionPreference='Stop'
-if (-not $AutorizarConsumoDeCreditos) { throw 'A criação pode consumir créditos. Revise docs/implantacao.md e autorize expressamente.' }
+if(-not $AutorizarConsumoDeCreditos){throw 'Revise os custos e autorize explicitamente o consumo de creditos.'}
+$rg='rg-api-tarefas-academica'
+$existing=az vm list -g $rg --query "[?name=='vm-api-tarefas'].name" -o tsv 2>$null
+if($existing){throw 'A VM ja existe. Nao execute novamente para atualizar; siga o procedimento de atualizacao.'}
 $account=az account show -o json | ConvertFrom-Json
 $all=az rest --method get --url 'https://management.azure.com/subscriptions?api-version=2022-12-01' -o json | ConvertFrom-Json
 $subscription=$all.value | Where-Object subscriptionId -eq $account.id
-if ($subscription.subscriptionPolicies.spendingLimit -ne 'On') { throw 'Limite de gastos deve estar On. Não o remova.' }
-$rg='rg-api-tarefas-academica'
-$region='canadacentral'
-$dns="tarefas-$([guid]::NewGuid().ToString('N').Substring(0,10))"
-$skus=az vm list-skus --location $region --size Standard_B1s --all -o json | ConvertFrom-Json
-$sku=$skus | Where-Object name -eq 'Standard_B1s'
-if (-not $sku -or @($sku.restrictions | Where-Object type -eq 'Location').Count -gt 0) { throw 'SKU indisponível nesta assinatura/região. Não foram criados recursos. Revise região, quota e orçamento.' }
-az group create --name $rg --location $region -o none
-if ($LASTEXITCODE) { throw 'Falha no grupo de recursos' }
-az vm create --resource-group $rg --name vm-api-tarefas --location $region --image Ubuntu2204 --size Standard_B1s --admin-username azureuser --generate-ssh-keys --storage-sku StandardSSD_LRS --os-disk-size-gb 32 --public-ip-sku Standard --public-ip-address-dns-name $dns --nsg-rule NONE -o json
-if ($LASTEXITCODE) { throw 'Falha na VM. Inspecione e remova recursos incompletos se necessário.' }
-# Administração pelo Run Command autenticado do Azure. Nenhuma porta SSH pública.
-az vm open-port --resource-group $rg --name vm-api-tarefas --port 80 --priority 1000 -o none
-az vm open-port --resource-group $rg --name vm-api-tarefas --port 443 --priority 1010 -o none
-$fqdn=az network public-ip list -g $rg --query '[0].dnsSettings.fqdn' -o tsv
-Write-Host "DNS: $fqdn. Use o procedimento de instalação; a API ainda não está implantada."
+if($subscription.subscriptionPolicies.spendingLimit -ne 'On'){throw 'Mantenha o limite de gastos ativo.'}
+az group create -n $rg -l $Regiao --tags projeto=api-tarefas-academica finalidade=demonstracao-academica -o none
+if($LASTEXITCODE){throw 'Falha ao criar grupo exclusivo'}
+az vm create -g $rg -n vm-api-tarefas -l $Regiao --image Debian:debian-12:12-gen2:0.20261026.2643 --size $Tamanho --admin-username azureuser --generate-ssh-keys --storage-sku Standard_LRS --os-disk-size-gb 32 --os-disk-name disk-api-tarefas --public-ip-sku Standard --public-ip-address ip-api-tarefas --public-ip-address-dns-name $Dns --nsg nsg-api-tarefas --nsg-rule NONE --vnet-name vnet-api-tarefas --subnet subnet-api --nic-delete-option Delete --os-disk-delete-option Delete --security-type Standard --tags projeto=api-tarefas-academica -o json
+if($LASTEXITCODE){throw 'Criacao nao concluida. Inspecione e remova somente os recursos incompletos deste projeto antes de tentar outra regiao.'}
+foreach($port in @(80,443)){
+ $priority=if($port -eq 80){1000}else{1010}
+ az network nsg rule create -g $rg --nsg-name nsg-api-tarefas -n "permitir-$port" --priority $priority --direction Inbound --access Allow --protocol Tcp --source-address-prefixes '*' --source-port-ranges '*' --destination-address-prefixes '*' --destination-port-ranges $port -o none
+ if($LASTEXITCODE){throw 'Falha ao configurar NSG'}
+}
+az disk update -g $rg -n disk-api-tarefas --network-access-policy DenyAll --public-network-access Disabled -o none
+if($LASTEXITCODE){throw 'Falha ao proteger exportacao do disco'}
+Write-Host 'Infraestrutura criada. Execute deploy/instalar-azure.ps1 e valide o CRUD publico.'

@@ -1,0 +1,112 @@
+{
+  "data_consulta": "2026-11-02",
+  "provedor": "Microsoft Azure",
+  "grupo": "rg-api-tarefas-academica",
+  "regiao": "mexicocentral",
+  "vm": {
+    "nome": "vm-api-tarefas",
+    "sku": "Standard_B2ats_v2",
+    "vcpus": 2,
+    "memoria_GiB": 1,
+    "imagem": {
+      "exactVersion": "0.20261026.2643",
+      "offer": "debian-12",
+      "publisher": "Debian",
+      "sku": "12-gen2",
+      "version": "0.20261026.2643"
+    },
+    "provisioningState": "Succeeded",
+    "instancias": 1,
+    "workers_uvicorn": 1
+  },
+  "disco": {
+    "nome": "disk-api-tarefas",
+    "sku": "Standard_LRS",
+    "tier": null,
+    "capacidade_GiB": 32,
+    "tipo": "Disco de SO gerenciado persistente",
+    "os": "Linux",
+    "estado": "Attached",
+    "networkAccessPolicy": "DenyAll",
+    "publicNetworkAccess": "Disabled"
+  },
+  "ip_publico": {
+    "nome": "ip-api-tarefas",
+    "sku": "Standard",
+    "alocacao": "Static",
+    "fqdn": "tarefas-academica-shamiryy-20261102.mexicocentral.cloudapp.azure.com"
+  },
+  "rede": {
+    "vnet": "vnet-api-tarefas",
+    "subredes": [
+      "subnet-api"
+    ],
+    "nsg": "nsg-api-tarefas",
+    "regras_publicas": [
+      {
+        "nome": "permitir-http",
+        "porta": "80",
+        "acesso": "Allow",
+        "protocolo": "Tcp"
+      },
+      {
+        "nome": "permitir-https",
+        "porta": "443",
+        "acesso": "Allow",
+        "protocolo": "Tcp"
+      }
+    ]
+  },
+  "recursos": [
+    {
+      "nome": "vnet-api-tarefas",
+      "tipo": "Microsoft.Network/virtualNetworks",
+      "regiao": "mexicocentral",
+      "sku": null
+    },
+    {
+      "nome": "ip-api-tarefas",
+      "tipo": "Microsoft.Network/publicIPAddresses",
+      "regiao": "mexicocentral",
+      "sku": {
+        "capacity": null,
+        "family": null,
+        "model": null,
+        "name": "Standard",
+        "size": null,
+        "tier": null
+      }
+    },
+    {
+      "nome": "nsg-api-tarefas",
+      "tipo": "Microsoft.Network/networkSecurityGroups",
+      "regiao": "mexicocentral",
+      "sku": null
+    },
+    {
+      "nome": "vm-api-tarefasVMNic",
+      "tipo": "Microsoft.Network/networkInterfaces",
+      "regiao": "mexicocentral",
+      "sku": null
+    },
+    {
+      "nome": "vm-api-tarefas",
+      "tipo": "Microsoft.Compute/virtualMachines",
+      "regiao": "mexicocentral",
+      "sku": null
+    },
+    {
+      "nome": "disk-api-tarefas",
+      "tipo": "Microsoft.Compute/disks",
+      "regiao": "mexicocentral",
+      "sku": {
+        "capacity": null,
+        "family": null,
+        "model": null,
+        "name": "Standard_LRS",
+        "size": null,
+        "tier": "Standard"
+      }
+    }
+  ]
+}

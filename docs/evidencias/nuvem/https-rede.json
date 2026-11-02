@@ -1,0 +1,89 @@
+{
+  "data_utc": "2026-11-02T18:15:29.977756+00:00",
+  "checagens_http": [
+    {
+      "url": "https://tarefas-academica-shamiryy-20261102.mexicocentral.cloudapp.azure.com/docs",
+      "http": 200,
+      "esperado": 200
+    },
+    {
+      "url": "https://tarefas-academica-shamiryy-20261102.mexicocentral.cloudapp.azure.com/redoc",
+      "http": 200,
+      "esperado": 200
+    },
+    {
+      "url": "https://tarefas-academica-shamiryy-20261102.mexicocentral.cloudapp.azure.com/openapi.json",
+      "http": 200,
+      "esperado": 200
+    },
+    {
+      "url": "https://tarefas-academica-shamiryy-20261102.mexicocentral.cloudapp.azure.com/tarefas.db",
+      "http": 404,
+      "esperado": 404
+    },
+    {
+      "url": "https://tarefas-academica-shamiryy-20261102.mexicocentral.cloudapp.azure.com/data/tarefas.db",
+      "http": 404,
+      "esperado": 404
+    },
+    {
+      "url": "https://tarefas-academica-shamiryy-20261102.mexicocentral.cloudapp.azure.com/.env",
+      "http": 404,
+      "esperado": 404
+    }
+  ],
+  "redirect_http_https": {
+    "http": 308,
+    "location": "https://tarefas-academica-shamiryy-20261102.mexicocentral.cloudapp.azure.com/health"
+  },
+  "tls": {
+    "versao": "TLSv1.3",
+    "emissor": [
+      [
+        [
+          "countryName",
+          "US"
+        ]
+      ],
+      [
+        [
+          "organizationName",
+          "Let's Encrypt"
+        ]
+      ],
+      [
+        [
+          "commonName",
+          "YE2"
+        ]
+      ]
+    ],
+    "valido_desde": "Nov  2 17:05:09 2026 GMT",
+    "valido_ate": "Jan 31 17:05:08 2027 GMT",
+    "nomes": [
+      [
+        "DNS",
+        "tarefas-academica-shamiryy-20261102.mexicocentral.cloudapp.azure.com"
+      ]
+    ],
+    "verificacao_certificado": "validado pelo trust store, sem desativar verificacao"
+  },
+  "portas": [
+    {
+      "porta": 22,
+      "conexao_tcp": "bloqueada ou não acessível desta origem"
+    },
+    {
+      "porta": 80,
+      "conexao_tcp": "aberta"
+    },
+    {
+      "porta": 443,
+      "conexao_tcp": "aberta"
+    },
+    {
+      "porta": 8000,
+      "conexao_tcp": "bloqueada ou não acessível desta origem"
+    }
+  ]
+}
