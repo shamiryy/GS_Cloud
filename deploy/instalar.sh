@@ -6,7 +6,7 @@ apt-get update
 apt-get install -y python3 python3-venv git caddy curl ca-certificates
 id tarefas >/dev/null 2>&1 || useradd --system --home /opt/tarefas --shell /usr/sbin/nologin tarefas
 if [ ! -d /opt/tarefas/.git ]; then
-  git clone https://github.com/shamiryy/api-tarefas-fastapi-sqlite.git /opt/tarefas
+  git clone https://github.com/shamiryy/GS_Cloud.git /opt/tarefas
 fi
 cd /opt/tarefas
 python3 -m venv .venv

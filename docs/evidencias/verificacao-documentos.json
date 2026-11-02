@@ -1,14 +1,20 @@
 {
-  "data_utc": "2026-11-02T18:29:48.910244+00:00",
-  "paginas_pdf": 28,
-  "imagens_incorporadas_word": 18,
-  "diagramas": 3,
-  "capturas_selecionadas": 15,
-  "links_externos_imagem": [],
-  "revisao_visual": "Todas as 28 paginas renderizadas e inspecionadas; sem cortes ou sobreposicoes observados",
-  "metodo": "Microsoft Word exportacao nativa e renderizacao PyMuPDF",
-  "sha256": {
-    "relatorio-academico.docx": "809b3fba67ad8846ac8f9169af54f416981d7bdfd286a030b9e40cca62f22d78",
-    "relatorio-academico.pdf": "9f83e04e5ae7fd36005f70315b2f6df9b08c35e2003bf8ea5daa8f0266ecb306"
-  }
+  "arquivo": "docs/GS_Cloud.pdf",
+  "paginas": 13,
+  "identificacao": "RM567440 - Shamiry França Luiz",
+  "conteudo": "3 paginas de explicacao, 3 de evidencias Azure e 7 de Swagger fornecido",
+  "revisao_visual": "Todas as 13 paginas renderizadas e inspecionadas; sem sobreposicoes observadas",
+  "privacidade": "Recortes dos prints e ocultacao do ID da assinatura; originais da estudante preservados",
+  "links_clicaveis": [
+    "https://github.com/shamiryy/GS_Cloud",
+    "https://tarefas-academica-shamiryy-20261102.mexicocentral.cloudapp.azure.com/tarefas",
+    "https://tarefas-academica-shamiryy-20261102.mexicocentral.cloudapp.azure.com/docs",
+    "https://fastapi.tiangolo.com/",
+    "https://www.sqlite.org/docs.html",
+    "https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/general-purpose/basv2-series",
+    "https://prices.azure.com/api/retail/prices",
+    "https://prices.azure.com/api/retail/prices"
+  ],
+  "sha256": "6fbebc3909d22888048e03a6254240d551c06907183c92f8444338b2e6be3934",
+  "data_utc": "2026-11-02T21:11:01.756735+00:00"
 }

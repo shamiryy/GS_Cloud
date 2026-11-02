@@ -50,7 +50,7 @@ try:
         swagger("get","/tarefas/{task_id}",None,"07-consulta-excluida-local.png")
         results.append({"teste":"consulta apos exclusao","http":r.status_code,"resposta":r.json(),"resultado":"aprovado"})
         page.goto((out/"testes-locais.txt").as_uri());page.add_style_tag(content="pre {font-size:18px;white-space:pre-wrap;overflow-wrap:anywhere}");page.locator("pre").screenshot(path=str(out/"08-testes-locais.png"))
-        page.goto("https://github.com/shamiryy/api-tarefas-fastapi-sqlite");page.wait_for_timeout(1500);page.screenshot(path=str(out/"09-github-publicado.png"),full_page=False)
+        page.goto("https://github.com/shamiryy/GS_Cloud");page.wait_for_timeout(1500);page.screenshot(path=str(out/"09-github-publicado.png"),full_page=False)
         browser.close()
 finally:
     proc.terminate();proc.wait(timeout=15);log.close()
