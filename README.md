@@ -4,7 +4,7 @@ API acadêmica de gerenciamento de tarefas, desenvolvida em Python com FastAPI e
 
 ## Entrega
 
-- **[Documentação acadêmica - GS_Cloud.pdf](docs/GS_Cloud.pdf)**: explicação resumida, esquemas visuais e minhas capturas completas.
+- **[Documentação acadêmica - GS_Cloud.pdf](docs/GS_Cloud.pdf)**: objetivo, funcionamento da API, implantação, elementos de nuvem e evidências.
 - **Repositório público:** https://github.com/shamiryy/GS_Cloud
 - **API:** https://tarefas-academica-shamiryy-20261102.mexicocentral.cloudapp.azure.com/tarefas
 - **Swagger:** https://tarefas-academica-shamiryy-20261102.mexicocentral.cloudapp.azure.com/docs
@@ -17,10 +17,10 @@ A raiz `/` não possui rota; abra `/docs` ou `/tarefas`. A aplicação permanece
 
 ```text
 app/          Aplicação FastAPI e modelos
-tests/       Testes isolados com bancos temporários
- deploy/      Instalação Debian, Caddy, systemd e provisionamento Azure
- scripts/     Backup, verificações e geração do PDF
- docs/        GS_Cloud.pdf, diagramas, versões e evidências
+tests/        Testes isolados com bancos temporários
+deploy/       Instalação Debian, Caddy, systemd e provisionamento Azure
+scripts/      Backup, verificações e geração do PDF
+docs/         GS_Cloud.pdf, diagramas, versões e evidências
 ```
 
 Cliente → HTTPS/Caddy → FastAPI/Uvicorn → SQLite em disco persistente. Na VM, o banco fica em `/var/lib/tarefas/tarefas.db`, com permissão 600, fora do código. Há uma VM e um worker. Consultas SQL usam parâmetros; validação é feita pelo Pydantic. .env, chaves, bancos, backups e .private não são publicados.
@@ -68,9 +68,9 @@ JSON de POST/PUT: `{"titulo":"Estudar SQLite","descricao":"Dado fictício","stat
 - [Persistência](docs/evidencias/nuvem/persistencia-publica.json)
 - [Infraestrutura real](docs/evidencias/nuvem/recursos-azure.json)
 - [Backup e runtime](docs/evidencias/nuvem/runtime-backup.json)
-- [Prints fornecidos para a entrega](docs/evidencias/entrega/)
+- [Capturas da aplicação e da infraestrutura](docs/evidencias/entrega/)
 
-O PDF exportado do Swagger mostra exemplos do contrato, não um log de CRUD executado. Os testes executados estão nos registros acima. As capturas usadas na entrega são os arquivos originais integrais, sem recortes ou censura, conforme a versão final solicitada.
+A exportação do Swagger documenta o contrato dos endpoints. Os registros de testes comprovam as operações executadas e a persistência dos dados.
 
 ## Hospedagem e operação
 
@@ -91,4 +91,4 @@ Com as evidências já incluídas, Python e fontes Arial disponíveis no Windows
 .venv/Scripts/python.exe scripts/build_gs_cloud.py
 ```
 
-Saída: `docs/GS_Cloud.pdf`. O gerador verifica o total de 16 páginas e renderiza imagens em qa para revisão. Os relatórios extensos anteriores foram substituídos por essa documentação.
+Saída: `docs/GS_Cloud.pdf`. O documento contém 16 páginas. As imagens de renderização para conferência ficam em qa, fora do controle de versão.

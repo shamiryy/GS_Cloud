@@ -3,38 +3,38 @@
     {
       "origem": "01-grupo-de-recursos.png",
       "arquivo": "01-grupo.png",
-      "tratamento": "Original integral sem recorte ou censura",
-      "sha256": "42fecb88095e4047d25ceda33d6466f0b26d5d101e88e66ddd0fc9bf2507adc5"
+      "sha256": "42fecb88095e4047d25ceda33d6466f0b26d5d101e88e66ddd0fc9bf2507adc5",
+      "tipo": "Captura do portal Azure"
     },
     {
       "origem": "02-visao-geral-vm.png",
       "arquivo": "02-vm.png",
-      "tratamento": "Original integral sem recorte ou censura",
-      "sha256": "70cb0139db510008ff17731dccc8792733bdf4a8173ee0fac885c0edebfb2cc8"
+      "sha256": "70cb0139db510008ff17731dccc8792733bdf4a8173ee0fac885c0edebfb2cc8",
+      "tipo": "Captura do portal Azure"
     },
     {
       "origem": "03-sku-vcpu-memoria.png",
       "arquivo": "03-sku.png",
-      "tratamento": "Original integral sem recorte ou censura",
-      "sha256": "6a1d94fd7df31d329e72f73a38cb38bfa4891c1d7e1f293b0f3a02b15d4a83b1"
+      "sha256": "6a1d94fd7df31d329e72f73a38cb38bfa4891c1d7e1f293b0f3a02b15d4a83b1",
+      "tipo": "Captura do portal Azure"
     },
     {
       "origem": "04-disco-persistente.png",
       "arquivo": "04-disco.png",
-      "tratamento": "Original integral sem recorte ou censura",
-      "sha256": "e75b58e651ddf81f3ac09e627ec46e70d23c4ea40513630217dab15586857bcc"
+      "sha256": "e75b58e651ddf81f3ac09e627ec46e70d23c4ea40513630217dab15586857bcc",
+      "tipo": "Captura do portal Azure"
     },
     {
       "origem": "05-ip-publico-dnds.png",
       "arquivo": "05-ip-dns.png",
-      "tratamento": "Original integral sem recorte ou censura",
-      "sha256": "2b762cf8431bd3799183f5a5e0682a85892be7eda0e332edbb6b1d3d3969cdaf"
+      "sha256": "2b762cf8431bd3799183f5a5e0682a85892be7eda0e332edbb6b1d3d3969cdaf",
+      "tipo": "Captura do portal Azure"
     },
     {
       "origem": "06-regras-de-entrada.png",
       "arquivo": "06-nsg.png",
-      "tratamento": "Original integral sem recorte ou censura",
-      "sha256": "1ba945c3a0a3e8a64cd51d6a349928bbfde661646460a3e1cede4d70f7447431"
+      "sha256": "1ba945c3a0a3e8a64cd51d6a349928bbfde661646460a3e1cede4d70f7447431",
+      "tipo": "Captura do portal Azure"
     }
   ],
   "swagger": "Exportacao integral de sete paginas do Swagger; exemplos do contrato, nao log de CRUD"

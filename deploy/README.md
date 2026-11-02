@@ -46,4 +46,4 @@ az group delete -n rg-api-tarefas-academica --yes
 az group exists -n rg-api-tarefas-academica
 ```
 
-Confirme false e confira custos finais no portal. A exclusão é irreversível, incluindo banco/disco. Nenhuma exclusão de nuvem foi executada durante a atualização da documentação.
+Confirme false e confira custos finais no portal. A exclusão é irreversível, incluindo banco/disco.
