@@ -1,49 +1,66 @@
 {
-  "fornecido_por": "Estudante",
-  "originais": "Preservados na pasta da estudante; nao publicados",
+  "originais": "Preservados na pasta original; nao publicados",
   "prints": [
     {
       "origem": "01-grupo-de-recursos.png",
       "arquivo": "01-grupo.png",
-      "tratamento": "Recorte de area relevante; dados de conta fora do enquadramento ou ocultados",
+      "dimensoes": [
+        1917,
+        913
+      ],
+      "tratamento": "Imagem inteira sem recortes; apenas dados de conta e identificadores ocultados",
       "tela": "Portal Azure"
     },
     {
       "origem": "02-visao-geral-vm.png",
       "arquivo": "02-vm.png",
-      "tratamento": "Recorte de area relevante; dados de conta fora do enquadramento ou ocultados",
+      "dimensoes": [
+        1909,
+        903
+      ],
+      "tratamento": "Imagem inteira sem recortes; apenas dados de conta e identificadores ocultados",
       "tela": "Portal Azure"
     },
     {
       "origem": "03-sku-vcpu-memoria.png",
       "arquivo": "03-sku.png",
-      "tratamento": "Recorte de area relevante; dados de conta fora do enquadramento ou ocultados",
+      "dimensoes": [
+        1918,
+        943
+      ],
+      "tratamento": "Imagem inteira sem recortes; apenas dados de conta e identificadores ocultados",
       "tela": "Portal Azure"
     },
     {
       "origem": "04-disco-persistente.png",
       "arquivo": "04-disco.png",
-      "tratamento": "Recorte de area relevante; dados de conta fora do enquadramento ou ocultados",
+      "dimensoes": [
+        1916,
+        941
+      ],
+      "tratamento": "Imagem inteira sem recortes; apenas dados de conta e identificadores ocultados",
       "tela": "Portal Azure"
     },
     {
       "origem": "05-ip-publico-dnds.png",
       "arquivo": "05-ip-dns.png",
-      "tratamento": "Recorte de area relevante; dados de conta fora do enquadramento ou ocultados",
-      "tela": "Portal Azure"
-    },
-    {
-      "origem": "05-ip-publico-dnds.png",
-      "arquivo": "05b-ip-estatico.png",
-      "tratamento": "Recorte de area relevante; dados de conta fora do enquadramento ou ocultados",
+      "dimensoes": [
+        1918,
+        946
+      ],
+      "tratamento": "Imagem inteira sem recortes; apenas dados de conta e identificadores ocultados",
       "tela": "Portal Azure"
     },
     {
       "origem": "06-regras-de-entrada.png",
       "arquivo": "06-nsg.png",
-      "tratamento": "Recorte de area relevante; dados de conta fora do enquadramento ou ocultados",
+      "dimensoes": [
+        1918,
+        733
+      ],
+      "tratamento": "Imagem inteira sem recortes; apenas dados de conta e identificadores ocultados",
       "tela": "Portal Azure"
     }
   ],
-  "swagger": "PDF exportado do Swagger com exemplos do contrato; nao e log de execucao de CRUD"
+  "swagger": "Exportacao integral de sete paginas do Swagger; exemplos do contrato, nao log de CRUD"
 }

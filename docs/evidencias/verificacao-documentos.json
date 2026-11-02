@@ -1,20 +1,10 @@
 {
   "arquivo": "docs/GS_Cloud.pdf",
-  "paginas": 13,
+  "paginas": 16,
   "identificacao": "RM567440 - Shamiry França Luiz",
-  "conteudo": "3 paginas de explicacao, 3 de evidencias Azure e 7 de Swagger fornecido",
-  "revisao_visual": "Todas as 13 paginas renderizadas e inspecionadas; sem sobreposicoes observadas",
-  "privacidade": "Recortes dos prints e ocultacao do ID da assinatura; originais da estudante preservados",
-  "links_clicaveis": [
-    "https://github.com/shamiryy/GS_Cloud",
-    "https://tarefas-academica-shamiryy-20261102.mexicocentral.cloudapp.azure.com/tarefas",
-    "https://tarefas-academica-shamiryy-20261102.mexicocentral.cloudapp.azure.com/docs",
-    "https://fastapi.tiangolo.com/",
-    "https://www.sqlite.org/docs.html",
-    "https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/general-purpose/basv2-series",
-    "https://prices.azure.com/api/retail/prices",
-    "https://prices.azure.com/api/retail/prices"
-  ],
-  "sha256": "6fbebc3909d22888048e03a6254240d551c06907183c92f8444338b2e6be3934",
-  "data_utc": "2026-11-02T21:11:01.756735+00:00"
+  "conteudo": "3 paginas de explicacao em primeira pessoa, 6 prints Azure inteiros e 7 paginas integrais de Swagger",
+  "revisao_visual": "Todas as 16 paginas renderizadas e inspecionadas",
+  "privacidade": "Dimensoes originais dos prints preservadas; somente dados de conta e identificadores ocultados",
+  "sha256": "06fd4aba0b6e3272ca9618bec9b2988a403a62e9ec2df58589cb75745d37af89",
+  "data_utc": "2026-11-02T21:55:04.678744+00:00"
 }

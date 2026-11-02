@@ -4,7 +4,7 @@ API acadêmica de gerenciamento de tarefas, desenvolvida em Python com FastAPI e
 
 ## Entrega
 
-- **[Documentação acadêmica - GS_Cloud.pdf](docs/GS_Cloud.pdf)**: explicação resumida, esquemas visuais e prints fornecidos pela estudante.
+- **[Documentação acadêmica - GS_Cloud.pdf](docs/GS_Cloud.pdf)**: explicação resumida, esquemas visuais e minhas capturas completas.
 - **Repositório público:** https://github.com/shamiryy/GS_Cloud
 - **API:** https://tarefas-academica-shamiryy-20261102.mexicocentral.cloudapp.azure.com/tarefas
 - **Swagger:** https://tarefas-academica-shamiryy-20261102.mexicocentral.cloudapp.azure.com/docs
@@ -70,7 +70,7 @@ JSON de POST/PUT: `{"titulo":"Estudar SQLite","descricao":"Dado fictício","stat
 - [Backup e runtime](docs/evidencias/nuvem/runtime-backup.json)
 - [Prints fornecidos para a entrega](docs/evidencias/entrega/)
 
-O PDF exportado do Swagger mostra exemplos do contrato, não um log de CRUD executado. Os testes executados estão nos registros acima. As cópias dos prints usadas na entrega têm recortes e dados de conta ocultados; os originais da estudante foram preservados.
+O PDF exportado do Swagger mostra exemplos do contrato, não um log de CRUD executado. Os testes executados estão nos registros acima. As capturas usadas na entrega estão inteiras, com as dimensões originais; somente dados de conta e identificadores foram ocultados. Os arquivos originais foram preservados.
 
 ## Hospedagem e operação
 
@@ -91,4 +91,4 @@ Com as evidências já incluídas, Python e fontes Arial disponíveis no Windows
 .venv/Scripts/python.exe scripts/build_gs_cloud.py
 ```
 
-Saída: `docs/GS_Cloud.pdf`. O gerador verifica o total de 13 páginas e renderiza imagens em qa para revisão. Os relatórios extensos anteriores foram substituídos por essa documentação.
+Saída: `docs/GS_Cloud.pdf`. O gerador verifica o total de 16 páginas e renderiza imagens em qa para revisão. Os relatórios extensos anteriores foram substituídos por essa documentação.
