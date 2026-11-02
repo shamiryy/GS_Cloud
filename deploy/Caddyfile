@@ -1,0 +1,4 @@
+# Substitua pelo DNS público real antes de iniciar.
+api.exemplo.invalid {
+    reverse_proxy 127.0.0.1:8000
+}
