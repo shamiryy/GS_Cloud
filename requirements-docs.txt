@@ -1,0 +1,4 @@
+-r requirements-dev.txt
+Pillow==13.0.0
+playwright==1.64.1
+PyMuPDF==2.0

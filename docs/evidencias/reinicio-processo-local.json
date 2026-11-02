@@ -1,0 +1,28 @@
+[
+  {
+    "teste": "rein?cio real do processo Uvicorn",
+    "antes": {
+      "titulo": "Apresentacao ficticia revisada",
+      "descricao": "",
+      "status": "concluida",
+      "id": 5,
+      "data_criacao": "2026-11-02T04:26:44.866363Z"
+    },
+    "depois": {
+      "titulo": "Apresentacao ficticia revisada",
+      "descricao": "",
+      "status": "concluida",
+      "id": 5,
+      "data_criacao": "2026-11-02T04:26:44.866363Z"
+    },
+    "resultado": "aprovado"
+  },
+  {
+    "teste": "consulta ap?s exclus?o",
+    "http": 404,
+    "resposta": {
+      "detail": "Tarefa não encontrada"
+    },
+    "resultado": "aprovado"
+  }
+]

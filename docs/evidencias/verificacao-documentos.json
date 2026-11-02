@@ -1,0 +1,7 @@
+{
+  "paginas_pdf": 18,
+  "imagens_incorporadas_word": 12,
+  "links_externos_imagem": [],
+  "caminhos_pessoais_word": [],
+  "metodo": "Word Microsoft exportação nativa e renderização PyMuPDF; revisão visual de todas as páginas"
+}

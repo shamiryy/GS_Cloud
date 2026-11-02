@@ -1,0 +1,44 @@
+﻿[
+    {
+        "productName":  "Standard SSD Managed Disks",
+        "skuName":  "E4 LRS",
+        "meterName":  "E4 LRS Disk",
+        "retailPrice":  2.64,
+        "unitOfMeasure":  "1/Month"
+    },
+    {
+        "productName":  "Standard SSD Managed Disks",
+        "skuName":  "E4 LRS",
+        "meterName":  "E4 LRS Disk Mount",
+        "retailPrice":  0.312,
+        "unitOfMeasure":  "1/Month"
+    },
+    {
+        "productName":  "Virtual Machines BS Series",
+        "skuName":  "B1s",
+        "meterName":  "B1s",
+        "retailPrice":  0.0116,
+        "unitOfMeasure":  "1 Hour"
+    },
+    {
+        "productName":  "IP Addresses",
+        "skuName":  "Standard",
+        "meterName":  "Standard IPv4 Static Public IP",
+        "retailPrice":  0.005,
+        "unitOfMeasure":  "1 Hour"
+    },
+    {
+        "productName":  "Standard SSD Managed Disks",
+        "skuName":  "E4 LRS",
+        "meterName":  "E4 LRS Disk Operations",
+        "retailPrice":  0.002,
+        "unitOfMeasure":  "10K"
+    },
+    {
+        "productName":  "Virtual Machines BS Series Windows",
+        "skuName":  "B1s",
+        "meterName":  "B1s",
+        "retailPrice":  0.0156,
+        "unitOfMeasure":  "1 Hour"
+    }
+]

@@ -1,0 +1,10 @@
+{
+  "consulta": "az vm list-skus --location canadacentral --size Standard_B1s --all",
+  "data": "2026-11-02",
+  "sku": "Standard_B1s",
+  "regiao": "canadacentral",
+  "restricao": "Location",
+  "motivo": "NotAvailableForSubscription",
+  "efeito": "Nenhum recurso criado; escolher combinação disponível antes de provisionar",
+  "outra_regiao_verificada": "centralus: NotAvailableForSubscription"
+}

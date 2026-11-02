@@ -1,0 +1,15 @@
+{
+  "ambiente": "local",
+  "backup": "aprovado",
+  "restauracao_em_arquivo_separado": "aprovado",
+  "integridade": "ok",
+  "registros_comparados": 1,
+  "tarefa_ficticia": {
+    "titulo": "Tarefa ficticia para backup",
+    "descricao": "",
+    "status": "em_andamento",
+    "id": 1,
+    "data_criacao": "2026-11-02T04:26:39.366784Z"
+  },
+  "observacao": "Backup com servidor TestClient ativo e restauração em novo arquivo; sem implantação em nuvem."
+}
