@@ -2,9 +2,8 @@
   "arquivo": "docs/GS_Cloud.pdf",
   "paginas": 16,
   "identificacao": "RM567440 - Shamiry França Luiz",
-  "conteudo": "3 paginas de explicacao em primeira pessoa, 6 prints Azure inteiros e 7 paginas integrais de Swagger",
   "revisao_visual": "Todas as 16 paginas renderizadas e inspecionadas",
-  "privacidade": "Dimensoes originais dos prints preservadas; somente dados de conta e identificadores ocultados",
-  "sha256": "06fd4aba0b6e3272ca9618bec9b2988a403a62e9ec2df58589cb75745d37af89",
-  "data_utc": "2026-11-02T21:55:04.678744+00:00"
+  "prints": "Originais completos sem recorte ou censura; pixels incorporados conferidos com os arquivos originais",
+  "sha256": "64612f5424a1cd4acb6e68c41e6bf9ad007c7856f25d6d2361aa304818a533b3",
+  "data_utc": "2026-11-02T22:40:01.593328+00:00"
 }

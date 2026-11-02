@@ -70,7 +70,7 @@ JSON de POST/PUT: `{"titulo":"Estudar SQLite","descricao":"Dado fictício","stat
 - [Backup e runtime](docs/evidencias/nuvem/runtime-backup.json)
 - [Prints fornecidos para a entrega](docs/evidencias/entrega/)
 
-O PDF exportado do Swagger mostra exemplos do contrato, não um log de CRUD executado. Os testes executados estão nos registros acima. As capturas usadas na entrega estão inteiras, com as dimensões originais; somente dados de conta e identificadores foram ocultados. Os arquivos originais foram preservados.
+O PDF exportado do Swagger mostra exemplos do contrato, não um log de CRUD executado. Os testes executados estão nos registros acima. As capturas usadas na entrega são os arquivos originais integrais, sem recortes ou censura, conforme a versão final solicitada.
 
 ## Hospedagem e operação
 

@@ -98,7 +98,7 @@ paragraph('Executei <b>17 testes locais</b> e registrei <b>23 requisições púb
 paragraph('Mantive a demonstração sem autenticação e usei somente dados fictícios; qualquer visitante pode alterar/excluir tarefas. Utilizei uma única instância, sem alta disponibilidade. As cópias que mantive no mesmo disco não protegem contra sua exclusão.','small',10)
 heading('7. Referências e evidências')
 paragraph('FastAPI: <link href="https://fastapi.tiangolo.com/" color="black">fastapi.tiangolo.com</link> · SQLite: <link href="https://www.sqlite.org/docs.html" color="black">sqlite.org/docs.html</link> · Azure VM/SKU: <link href="https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/general-purpose/basv2-series" color="black">Microsoft Learn - Basv2</link> · Preços: <link href="https://prices.azure.com/api/retail/prices" color="black">Azure Retail Prices API</link>.','small',6)
-paragraph('Nos anexos, apresento meus prints completos da Azure e minha exportação do Swagger, sem recortes. Ocultei apenas dados de conta e identificadores. A exportação mostra exemplos do contrato; os logs do projeto comprovam os testes que executei.','small')
+paragraph('Nos anexos, apresento meus prints completos da Azure e minha exportação do Swagger, sem recortes ou censura. A exportação mostra exemplos do contrato; os logs do projeto comprovam os testes que executei.','small')
 # Anexo A: um print completo por pagina em paisagem.
 portal=[
  ('01-grupo.png','Recursos Azure','Figura 5. Meu grupo rg-api-tarefas-academica e seus recursos em Mexico Central.'),
@@ -111,7 +111,7 @@ for filename,title,caption in portal:
  nextpage(True);heading('Anexo A - '+title)
  image(ev/filename,width=W-2*M,maxheight=H-2*M-78)
  paragraph(caption,'caption',8)
- paragraph('Mantive a captura inteira e ocultei apenas dados de conta e identificadores.','caption')
+ paragraph('Mantive a captura original inteira, sem recortes ou censura.','caption')
 footer();c.save();assert page==9
 # Preserve all seven original Swagger pages, with a short appendix label and global page numbers.
 final=pymupdf.open(main);swagger=pymupdf.open(ev/'swagger-ui.pdf');assert len(swagger)==7
